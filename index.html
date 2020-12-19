@@ -301,11 +301,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><Script>
-	$('.nav-item').on('click', function (e) {
-		localStorage.setItem('dep', e.target.id);
-	});
-</Script>
+                        </div>
+						<Script>
+							$('.nav-item').on('click', function (e) {
+								if (e.target.id.replace("item-1-","").replace("-tab","")<=3 || e.target.id.replace("item-1-","").replace("-tab","")>=1){
+									localStorage.setItem('dep', e.target.id);
+								}
+							});
+						</Script>
                     </div>
                 </div>
             </div>
