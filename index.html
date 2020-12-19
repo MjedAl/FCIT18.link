@@ -304,7 +304,7 @@
                         </div>
 						<Script>
 							$('.nav-item').on('click', function (e) {
-								if (e.target.id.replace("item-1-","").replace("-tab","")<=3 || e.target.id.replace("item-1-","").replace("-tab","")>=1){
+								if (e.target.id!=""){
 									localStorage.setItem('dep', e.target.id);
 								}
 							});
